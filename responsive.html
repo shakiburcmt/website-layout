@@ -20,25 +20,48 @@
         }
 
         .food img {
+            border-radius: 5px;
             width: 75%;
         }
 
-        /* small device */
-        @media screen and (max-width: 576px) {
+        .food .image-wrap {
+            display: flex;
+            justify-content: center;
+        }
 
-            /* .food {
+        /* small device */
+        @media screen and (min-width:0px) and (max-width:575px) {
+
+            .food {
                 background-color: aqua;
-            } */
+            }
+
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* medium device */
+        @media screen and (min-width:576px) and (max-width:1000px) {
+
+            .food {
+                background-color: brown;
+            }
+
             .container {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        /* medium device */
-        @media screen and (min-width:577px) and (max-width:992px) {
+        /* large device */
+        @media screen and (min-width:1001px) {
             .food {
-                background-color: brown;
+                background-color: bisque;
             }
+
+            /* .container {
+                grid-template-columns: repeat(3, 1fr);
+            } */
         }
     </style>
 </head>
@@ -46,7 +69,8 @@
 <body>
     <div class="container">
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap"><img src="images/food.jpg" alt=""></div>
+
             <h2>item-1</h2>
             <h4>price: 100</h4>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem vero incidunt similique rem amet
@@ -55,7 +79,9 @@
             <button>Order Now</button>
         </div>
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap">
+                <img src="images/food.jpg" alt="">
+            </div>
             <h2>item-2</h2>
             <h4>price: 200</h4>
             <p>Unde ullam ducimus odit est quis saepe voluptatibus veniam. Sequi, consectetur adipisci dolorum mollitia
@@ -64,7 +90,9 @@
             <button>Order Now</button>
         </div>
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap">
+                <img src="images/food.jpg" alt="">
+            </div>
             <h2>item-3</h2>
             <h4>price: 300</h4>
             <p>Tempora repellat, dolorem sequi temporibus, vero deleniti quidem quis inventore beatae debitis alias.
@@ -73,7 +101,9 @@
             <button>Order Now</button>
         </div>
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap">
+                <img src="images/food.jpg" alt="">
+            </div>
             <h2>item-4</h2>
             <h4>price: 400</h4>
             <p>Eaque consequuntur quo inventore et ea totam autem id, nam qui illo veritatis culpa velit maiores
@@ -82,7 +112,9 @@
             <button>Order Now</button>
         </div>
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap">
+                <img src="images/food.jpg" alt="">
+            </div>
             <h2>item-5</h2>
             <h4>price: 500</h4>
             <p>Perspiciatis non dicta, nihil dolor assumenda impedit soluta voluptate dignissimos aliquid voluptatibus
@@ -91,7 +123,9 @@
             <button>Order Now</button>
         </div>
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap">
+                <img src="images/food.jpg" alt="">
+            </div>
             <h2>item-6</h2>
             <h4>price: 600</h4>
             <p>Veritatis ex officia nihil blanditiis consectetur similique atque sint quo dolorem, ipsum facilis
@@ -100,7 +134,9 @@
             <button>Order Now</button>
         </div>
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap">
+                <img src="images/food.jpg" alt="">
+            </div>
             <h2>item-7</h2>
             <h4>price: 700</h4>
             <p>Cupiditate, veritatis, quisquam odio ut deleniti quas quidem illo modi, veniam quia ipsum numquam
@@ -109,7 +145,9 @@
             <button>Order Now</button>
         </div>
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap">
+                <img src="images/food.jpg" alt="">
+            </div>
             <h2>item-8</h2>
             <h4>price: 800</h4>
             <p>Consectetur laboriosam aliquam voluptates, atque expedita sint iste a? Iusto provident exercitationem
@@ -118,7 +156,9 @@
             <button>Order Now</button>
         </div>
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap">
+                <img src="images/food.jpg" alt="">
+            </div>
             <h2>item-9</h2>
             <h4>price: 900</h4>
             <p>Enim minus dolorum ut accusantium, nihil tempore ducimus perspiciatis corrupti quisquam tenetur magnam
@@ -127,7 +167,9 @@
             <button>Order Now</button>
         </div>
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap">
+                <img src="images/food.jpg" alt="">
+            </div>
             <h2>item-10</h2>
             <h4>price: 1000</h4>
             <p>Sunt, consequatur soluta. Quos expedita obcaecati commodi. Tempora ad, magni ipsa sequi ducimus totam
@@ -136,7 +178,9 @@
             <button>Order Now</button>
         </div>
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap">
+                <img src="images/food.jpg" alt="">
+            </div>
             <h2>item-11</h2>
             <h4>price: 1100</h4>
             <p>Sunt, fuga tempore odio quaerat ipsum quia laudantium nesciunt fugit quam sit distinctio molestiae
@@ -145,7 +189,9 @@
             <button>Order Now</button>
         </div>
         <div class="food">
-            <img src="images/food.jpg" alt="">
+            <div class="image-wrap">
+                <img src="images/food.jpg" alt="">
+            </div>
             <h2>item-12</h2>
             <h4>price: 1200</h4>
             <p>Beatae hic quia similique numquam. Aliquam omnis fugit eos reprehenderit, repudiandae explicabo!
